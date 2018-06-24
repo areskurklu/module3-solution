@@ -12,7 +12,7 @@ function FoundItemsDirective() {
   var ddo = {
     templateUrl: 'foundItems.html',
     scope: {
-     list: '=fndItems',
+     list: '<fndItems',
     //  badRemove: '=',
      onRemove: '&'
     }
@@ -20,7 +20,6 @@ function FoundItemsDirective() {
   //  controllerAs: 'list',
   //  bindToController: true
   };
-
   return ddo;
 }
 
