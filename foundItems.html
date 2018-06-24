@@ -1,0 +1,14 @@
+<div>
+<ul>
+  <li ng-repeat="nList in list.categories">
+  {{ nList.name }}  , {{ nList.short_name }} , <b> {{ nList.description }}</b> ,
+
+ <button ng-click="list.removeItem($index);">Don't want this one!</button>
+  <!--
+    <button ng-click="list.onRemove({index: $index});">Remove Item</button>
+  -->
+
+  </li>
+</ul>
+</div>
+ <div ng-if="list.errorMessage" class="error">Error: {{list.errorMessage}}</div>
